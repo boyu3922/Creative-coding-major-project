@@ -1,5 +1,6 @@
 let colors = ['#e6302b', '#fd7800', '#fbd400', '#3bd89f', '#0045e8', '#f477c3', '#70499c', '#006494', '#1b98e0'];
 let vertexOffset = 0;
+let circleMinSize = 30;
 
 class CirclePacking {
   // Constructor to initialize the CirclePacking instance.
@@ -41,7 +42,7 @@ class CirclePacking {
       let p = this.points[i];
       noStroke();
       fill(random(colors)); // Random color for each shape.
-      if (p.z < 30) {
+      if (p.z < circleMinSize) {
         circle(p.x, p.y, p.z); // Draw simple circle if small.
       } else {
         let tt = int(random(30, 40)); // Number of layers for larger circles.
@@ -99,9 +100,20 @@ function keyPressed() {
   redraw(); // Refresh the canvas.
 }
 
+function mouseClicked() {
+  if (circleMinSize === 30) {
+    circleMinSize = 300;
+    redraw()
+  } else {
+    circleMinSize = 30;
+    redraw()
+  }
+}
+
 function describeText() {
   fill(255);
   text('← Press left and right arrow key to adjust the fortune amount →', 20, 20);
+  text('Left click mouse to hide and unhide star-like shape in the wheel ', 20, 40);
 }
 
 function windowResized() {

@@ -24,6 +24,10 @@ Vice versa, when you press the right arrow key, the star-like shape of the wealt
 
 When the wealth is reduced to the minimum, the screen will randomly appear empty area, symbolising that the wealth is completely consumed by other wealth wheels.
 
+### **Mouse Click**
+
+When the user clicks the left mouse button, the star-like shape in the fortune wheel will hide or unhide, symbolising that people can choose to hide or show one's wealth.
+
 ![Untitled](assets/5a0c7bf3-f543-4d10-b572-329b33be6175.png)
 
 ### Inspiration - Kaleidoscope
@@ -36,4 +40,4 @@ Picture source: Vector floral pattern, naqiewei, iStock
 
 ### Conclusion
 
-I created a keyPressed( ) function to change the vertexOffset variable, which will affect on the number of vertices of star-like shape. Through press left and right arrow key, the vertexOffset variable will change, to increase or decrease the vertices amount.
+I created a keyPressed( ) function to change the vertexOffset variable, which will affect on the number of vertices of star-like shape. Through press left and right arrow key, the vertexOffset variable will change, to increase or decrease the vertices amount. mouseClicked( ) function give users a choice to hide and unhide the star-like shape in the fortune wheel.
