@@ -4,7 +4,7 @@
 
 Based on: Wheels of Fortune, Pacita Abad, 2000
 
-### **User Input:** Incorporate keyboard inputs for animation.
+### **User Input:** Incorporate keyboard and mouse inputs for animation.
 
 I chose to change the artwork based on keyboard input to make it animated. When the user presses the left or right arrow keys on the keyboard, the inside of wealth wheels changes. 
 
@@ -20,15 +20,17 @@ Vice versa, when you press the right arrow key, the star-like shape of the wealt
 
 ![Screenshot 2024-05-30 at 2.34.53 AM.png](assets/5763b369-aa38-45d4-a766-97f46d20ac25.png)
 
-### **%**
+### **Minimum Amount**
 
 When the wealth is reduced to the minimum, the screen will randomly appear empty area, symbolising that the wealth is completely consumed by other wealth wheels.
+
+![Untitled](assets/5a0c7bf3-f543-4d10-b572-329b33be6175.png)
 
 ### **Mouse Click**
 
 When the user clicks the left mouse button, the star-like shape in the fortune wheel will hide or unhide, symbolising that people can choose to hide or show one's wealth.
 
-![Untitled](assets/5a0c7bf3-f543-4d10-b572-329b33be6175.png)
+![Screenshot 2024-05-30 at 11.44.12 PM.png](assets/click.png)
 
 ### Inspiration - Kaleidoscope
 
