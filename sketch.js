@@ -78,7 +78,7 @@ class CirclePacking {
 }
 
 function setup() {
-  createCanvas(740, 740); // Set up canvas size.
+  createCanvas(windowWidth, windowHeight); // Set up canvas size.
   rectMode(CENTER); // Set rectangle mode to center.
 }
 
@@ -101,5 +101,10 @@ function keyPressed() {
 
 function describeText() {
   fill(255);
-  text('← Press left and right arrow key to adjust the fortune amount →', 200, 730);
+  text('← Press left and right arrow key to adjust the fortune amount →', 20, 20);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+  calculateImageDrawProps();
 }
